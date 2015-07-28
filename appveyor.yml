@@ -6,7 +6,6 @@ install:
    - ps: $env:PsModulePath  
    - ps: Get-ChildItem C:\projects -include xPSDesiredStateConfiguration -Recurse | copy-item -Destination C:\Users\appveyor\Documents\WindowsPowerShell\Modules -Recurse -force 
 
-
 build: false
 
 test_script:
