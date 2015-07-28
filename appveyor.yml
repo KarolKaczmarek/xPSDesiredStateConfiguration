@@ -4,10 +4,10 @@ install:
     - ps: winrm quickconfig -quiet  
     - ps: test-wsman  
     - ps: $env:PsModulePath  
-    - ps: Get-ChildItem C:\Users\appveyor\Documents\WindowsPowerShell\Modules
+    - ps: Get-ChildItem "C:\Program Files\WindowsPowerShell\Modules"
     - ps: Get-ChildItem C:\projects
-    - ps: Get-ChildItem C:\projects -include xPSDesiredStateConfiguration -Recurse | copy-item -Destination C:\Users\appveyor\Documents\WindowsPowerShell\Modules -Recurse -force 
-    - ps: Get-ChildItem C:\Users\appveyor\Documents\WindowsPowerShell\Modules
+    - ps: Get-ChildItem C:\projects -include xPSDesiredStateConfiguration -Recurse | copy-item -Destination "C:\Program Files\WindowsPowerShell\Modules" -Recurse -force 
+    - ps: Get-ChildItem "C:\Program Files\WindowsPowerShell\Modules"
 
 build: false
 
