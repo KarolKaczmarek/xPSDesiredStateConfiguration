@@ -17,8 +17,9 @@ Please check out common DSC Resources [contributing guidelines](https://github.c
 * **xService** configures and manages Windows services.
 * **xRemoteFile** ensures the presence of remote files on a local machine.
 * **xPackage** manages the installation of .msi and .exe packages.
-* **xGroup** configures and manages local Windows groups
+* **xGroup** configures and manages local Windows groups.
 * **xFileUpload** is a composite resource which ensures that local files exist on an SMB share. 
+* **xWindowsOptionalFeature** enables configuring optional features on Windows Client SKUs.
 
 ### xArchive
 
